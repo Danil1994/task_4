@@ -1,7 +1,7 @@
 import argparse
 
 from collection_framework import count_unical_symbol
-from exeption import FileDoesNotExist, NotArgument
+from exception import FileDoesNotExist, NotArgument
 
 
 def read_file(file_name: str) -> str:
@@ -12,12 +12,11 @@ def read_file(file_name: str) -> str:
         raise FileDoesNotExist("The specified file does not exist")
 
 
-def parser():
+def parser() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--string', required=False)
     parser.add_argument('--file', required=False)
     obj = parser.parse_args()
-    print(obj)
 
     if obj.file is None and obj.string is None:
         raise NotArgument("Use '--string' or '--file command'")
@@ -25,7 +24,7 @@ def parser():
     elif obj.file:
         return count_unical_symbol(read_file(obj.file))
 
-    elif obj.string:
+    else:
         return count_unical_symbol(obj.string)
 
 
