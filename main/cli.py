@@ -27,6 +27,6 @@ def parser() -> int:
     else:
         return count_unical_symbol(obj.string)
 
-
-if __name__ == '__main__':
-    print(parser())
+#
+# if __name__ == '__main__':
+#     print(parser())

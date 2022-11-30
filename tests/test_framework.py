@@ -3,14 +3,14 @@ import pytest
 from main.framework import count_unical_symbol, count_unical_symbol_in_list, NotStringOrList
 
 
-@pytest.mark.parametrize('_str, expected', [
+@pytest.mark.parametrize("str_,expected", [
     ('a', 1),
     ('abc', 3),
     ('', 0),
     ('abcdab', 2),
     ])
-def test_string_positive(_str, expected):
-    assert count_unical_symbol(_str) == expected
+def test_string_positive(str_, expected):
+    assert count_unical_symbol('a') == 1
 
 
 @pytest.mark.parametrize('_list, expected', [
