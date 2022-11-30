@@ -1,6 +1,6 @@
 import pytest
 
-from collection_framework import count_unical_symbol, count_unical_symbol_in_list, NotStringOrList
+from main.framework import count_unical_symbol, count_unical_symbol_in_list, NotStringOrList
 
 
 @pytest.mark.parametrize('_str, expected', [

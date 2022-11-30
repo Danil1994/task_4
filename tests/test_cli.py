@@ -1,6 +1,7 @@
 import argparse
 import unittest
 
+
 from unittest.mock import patch, mock_open
 
 from main.cli import parser, read_file
