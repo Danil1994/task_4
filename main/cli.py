@@ -1,7 +1,7 @@
 import argparse
 
-from .framework import count_unical_symbol
-from .exception import FileDoesNotExist, NotArgument
+from main.framework import count_unical_symbol
+from main.exception import FileDoesNotExist, NotArgument
 
 
 def read_file(file_name: str) -> str:

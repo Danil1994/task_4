@@ -6,3 +6,5 @@ class NotArgument(TypeError):
     pass
 
 
+class NotStringOrList(TypeError):
+    pass

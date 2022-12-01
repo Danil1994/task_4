@@ -2,11 +2,9 @@ from collections import Counter
 from functools import wraps
 from typing import Iterable
 
+from main.exception import NotStringOrList
+
 Save_results = {}
-
-
-class NotStringOrList(TypeError):
-    pass
 
 
 def save_result(func):
